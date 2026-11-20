@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustiva Bank - Fixed Deposit</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-page">
+
+    <header class="page-header">
+        <img src="../assets/images/logo.png" alt="Trustiva Bank logo">
+        <h1>Trustiva Bank</h1>
+    </header>
+
+    <main class="panel">
+        <h1>Fixed Deposit</h1>
+        <p class="panel-info">Create a demo fixed deposit for your account.</p>
+
+        <form id="fixedDepositForm" novalidate>
+            <label for="fdAmount">Amount</label>
+            <input class="money-input" type="number" id="fdAmount" min="1" step="0.01" placeholder="Enter amount">
+
+            <label for="fdYears">Duration (years)</label>
+            <input class="money-input" type="number" id="fdYears" min="1" max="10" step="1" placeholder="Enter years (1-10)">
+
+            <button type="submit" class="btn btn-dark" id="fdButton">Create Fixed Deposit</button>
+        </form>
+
+        <p class="form-message" id="fdMessage"></p>
+        <a class="btn btn-light" href="dashboard.html">Back to Dashboard</a>
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/session.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/pages/fixed-deposit.js"></script>
+</body>
+</html>

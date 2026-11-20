@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustiva Bank - Dashboard</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-page">
+
+    <header class="page-header">
+        <img src="../assets/images/logo.png" alt="Trustiva Bank logo">
+        <h1>Trustiva Bank</h1>
+    </header>
+
+    <main class="dashboard">
+        <h2 class="welcome" id="welcomeText">Welcome back!</h2>
+
+        <div class="services">
+            <h2 class="services-title">Banking Services</h2>
+
+            <a class="service-card" href="balance.html">
+                <img src="../assets/images/balance.png" alt="">
+                <h3>Current Balance</h3>
+            </a>
+
+            <a class="service-card" href="transactions.html">
+                <img src="../assets/images/transactions.png" alt="">
+                <h3>Transaction History</h3>
+            </a>
+
+            <a class="service-card" href="withdraw.html">
+                <img src="../assets/images/withdraw.png" alt="">
+                <h3>Withdraw Money</h3>
+            </a>
+
+            <a class="service-card" href="deposit.html">
+                <img src="../assets/images/deposit.png" alt="">
+                <h3>Deposit Money</h3>
+            </a>
+
+            <a class="service-card" href="fixed-deposit.html">
+                <img src="../assets/images/fixed-deposit.png" alt="">
+                <h3>Fixed Deposit</h3>
+            </a>
+
+            <button type="button" class="service-card" id="logoutButton">
+                <img src="../assets/images/logout.png" alt="">
+                <h3>Logout</h3>
+            </button>
+        </div>
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/session.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/pages/dashboard.js"></script>
+</body>
+</html>

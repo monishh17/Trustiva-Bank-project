@@ -1,0 +1,20 @@
+:root {
+  --blue: #4b6df5;
+  --blue-action: #4772f5;
+  --blue-dark: #2f4fc4;
+  --navy: #111d45;
+  --muted: #73798c;
+  --border: #d5d8e2;
+  --error: #d93025;
+  --success: #188038;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

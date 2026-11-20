@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustiva Bank - Deposit</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-page">
+
+    <header class="page-header">
+        <img src="../assets/images/logo.png" alt="Trustiva Bank logo">
+        <h1>Trustiva Bank</h1>
+    </header>
+
+    <main class="panel">
+        <h1>Deposit Money</h1>
+        <p class="panel-info">Current balance: <strong id="depositBalance">₹0</strong></p>
+
+        <form id="depositForm" novalidate>
+            <label for="depositAmount">Amount</label>
+            <input class="money-input" type="number" id="depositAmount" min="1" step="0.01" placeholder="Enter amount">
+
+            <button type="submit" class="btn btn-dark" id="depositButton">Deposit</button>
+        </form>
+
+        <p class="form-message" id="depositMessage"></p>
+        <a class="btn btn-light" href="dashboard.html">Back to Dashboard</a>
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/session.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/pages/deposit.js"></script>
+</body>
+</html>

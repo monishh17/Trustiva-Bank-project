@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustiva Bank - Login</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+
+    <main class="auth-card">
+        <div class="brand">
+            <img src="assets/images/logo.png" alt="Trustiva Bank logo">
+            <h1>Trustiva Bank</h1>
+        </div>
+
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Log in to access your account</p>
+
+        <form id="loginForm" novalidate>
+            <div class="input-box">
+                <span class="icon">👤</span>
+                <input type="text" id="username" placeholder="Username" autocomplete="username">
+            </div>
+
+            <div class="input-box">
+                <span class="icon">🔒</span>
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+            </div>
+
+            <a class="link forgot" href="pages/forgot-password.html">Forgot password?</a>
+
+            <button type="submit" class="btn btn-accent" id="loginButton">Login</button>
+        </form>
+
+        <p class="or-text">or</p>
+
+        <a class="link" href="pages/create-account.html">Create New Bank Account</a>
+
+        <p class="form-message" id="loginMessage"></p>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/pages/login.js"></script>
+</body>
+</html>
